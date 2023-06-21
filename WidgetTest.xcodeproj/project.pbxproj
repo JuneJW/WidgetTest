@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F05BC612A42BC3100474104 /* WidgetTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC602A42BC3100474104 /* WidgetTestApp.swift */; };
-		3F05BC632A42BC3100474104 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC622A42BC3100474104 /* ContentView.swift */; };
+		3F05BC612A42BC3100474104 /* iOSEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC602A42BC3100474104 /* iOSEntry.swift */; };
+		3F05BC632A42BC3100474104 /* iOSWidgetTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC622A42BC3100474104 /* iOSWidgetTestView.swift */; };
 		3F05BC652A42BC3300474104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F05BC642A42BC3300474104 /* Assets.xcassets */; };
 		3F05BC682A42BC3300474104 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F05BC672A42BC3300474104 /* Preview Assets.xcassets */; };
+		3F05BC702A42C18F00474104 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC6F2A42C18F00474104 /* APIService.swift */; };
+		3F05BC722A42CE9C00474104 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC712A42CE9C00474104 /* Result.swift */; };
+		3F05BC742A42D24300474104 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC732A42D24300474104 /* WeatherView.swift */; };
+		3F05BC772A42E3B600474104 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC762A42E3B600474104 /* Constants.swift */; };
+		3F05BC792A42EBE400474104 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BC782A42EBE400474104 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F05BC5D2A42BC3100474104 /* WidgetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F05BC602A42BC3100474104 /* WidgetTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTestApp.swift; sourceTree = "<group>"; };
-		3F05BC622A42BC3100474104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F05BC602A42BC3100474104 /* iOSEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSEntry.swift; sourceTree = "<group>"; };
+		3F05BC622A42BC3100474104 /* iOSWidgetTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgetTestView.swift; sourceTree = "<group>"; };
 		3F05BC642A42BC3300474104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F05BC672A42BC3300474104 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F05BC6F2A42C18F00474104 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3F05BC712A42CE9C00474104 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3F05BC732A42D24300474104 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		3F05BC752A42DFDA00474104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3F05BC762A42E3B600474104 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F05BC782A42EBE400474104 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		3F05BC542A42BC3100474104 = {
 			isa = PBXGroup;
 			children = (
+				3F05BC6E2A42C18100474104 /* Shared */,
 				3F05BC5F2A42BC3100474104 /* WidgetTest */,
 				3F05BC5E2A42BC3100474104 /* Products */,
 			);
@@ -51,8 +63,9 @@
 		3F05BC5F2A42BC3100474104 /* WidgetTest */ = {
 			isa = PBXGroup;
 			children = (
-				3F05BC602A42BC3100474104 /* WidgetTestApp.swift */,
-				3F05BC622A42BC3100474104 /* ContentView.swift */,
+				3F05BC752A42DFDA00474104 /* Info.plist */,
+				3F05BC602A42BC3100474104 /* iOSEntry.swift */,
+				3F05BC622A42BC3100474104 /* iOSWidgetTestView.swift */,
 				3F05BC642A42BC3300474104 /* Assets.xcassets */,
 				3F05BC662A42BC3300474104 /* Preview Content */,
 			);
@@ -65,6 +78,18 @@
 				3F05BC672A42BC3300474104 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F05BC6E2A42C18100474104 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3F05BC6F2A42C18F00474104 /* APIService.swift */,
+				3F05BC712A42CE9C00474104 /* Result.swift */,
+				3F05BC732A42D24300474104 /* WeatherView.swift */,
+				3F05BC762A42E3B600474104 /* Constants.swift */,
+				3F05BC782A42EBE400474104 /* Utils.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F05BC632A42BC3100474104 /* ContentView.swift in Sources */,
-				3F05BC612A42BC3100474104 /* WidgetTestApp.swift in Sources */,
+				3F05BC742A42D24300474104 /* WeatherView.swift in Sources */,
+				3F05BC632A42BC3100474104 /* iOSWidgetTestView.swift in Sources */,
+				3F05BC702A42C18F00474104 /* APIService.swift in Sources */,
+				3F05BC792A42EBE400474104 /* Utils.swift in Sources */,
+				3F05BC722A42CE9C00474104 /* Result.swift in Sources */,
+				3F05BC612A42BC3100474104 /* iOSEntry.swift in Sources */,
+				3F05BC772A42E3B600474104 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +300,7 @@
 				DEVELOPMENT_TEAM = F6NA6H62C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +330,7 @@
 				DEVELOPMENT_TEAM = F6NA6H62C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
